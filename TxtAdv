@@ -1,0 +1,25 @@
+var name = prompt("What is your name?").toUpperCase();
+
+confirm("Hi " + name + "! Welcome to 'Time, Space, and Money'. Click OK or press ENTER to continue.");
+
+confirm("You're in a very long line. It's not the most exciting way to start a game, but there's a few things you need before you can become an intergalactic traveling salesman.");
+
+confirm("This is taking forever. Maybe you should’ve just ordered it all online, but you didn’t want to wait a long time to actually get it. So you came to the store. Obviously, you made a tactical error.");
+
+confirm("Ah, the old ‘needing a time machine before buying it’ paradox.  Of course, with a time machine, there’s a lot more dangerous possible paradoxes. Better play it safe once you get it.");
+
+confirm("Finally, the front of the line. ‘Kion vi volas?’ Questions the clerk. Ooh, Esperanto, add translator to the list of things you need. She probably said something along the lines of ‘Whaddya want?’ Let’s see...");
+
+confirm("Probably should of thought of this while you were in line. The people behind you grumble as you stare at the items and prices. You need a time machine, a translator, and of course, a teleporter.");
+
+trackPurchase = true;
+
+while (trackPurchase){
+	var purchase = prompt("The translator is 100 credits, the teleporter is 500 credits, and the time machine is 1,000 credits. Tax is 5%. You tap the items on the selection screen.  How many credits do you transfer to the register?");
+	if (purchase === '1,680'){
+		trackPurchase = false;
+		confirm("You transfer 1,680 of your hard-earned 3,000 credits to the register. The clerk presses a few buttons and your items materialize. Your superlative salesman adventure is about to begin.");
+	}else{
+		confirm("Try again.");
+	}
+}
